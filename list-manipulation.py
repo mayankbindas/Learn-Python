@@ -21,15 +21,20 @@ foosballers = [
 ]
 
 median = round(len(foosballers)/2)
+#median = len(foosballers)//2
 print("median player: " + foosballers[median])
 print(foosballers[median-2], foosballers[median-1], foosballers[median], foosballers[median+1], foosballers[median+2])
+#print(foosballers[median-2:median+3])
 foosballers.insert(median, "Average Player")
-foosballers[median] = "AVERAGE PLAYER."
+foosballers[median] = "AVERAGE PLAYER." #foosballers.index("Average Player")
 foosballers.append("lousy1")
 foosballers.append("lousy2")
 foosballers.append("lousy3")
 foosballers.append("lousy4")
 foosballers.append("lousy5")
+#foosballers += [
+  #"lousy1", "lousy2"...
+#]
 # print(foosballers)
 
 newMedian = round(len(foosballers)/2)
